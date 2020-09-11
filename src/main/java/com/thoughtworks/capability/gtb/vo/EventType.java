@@ -13,7 +13,7 @@ public enum EventType {
   }
 
   @JsonValue
-  final String value() {
+  final String code() {
     return this.code;
   }
 }

@@ -20,6 +20,7 @@ public class EventController {
   public EventVo getEventById(@PathVariable("id") String id) {
     UserVo user = new UserVo("3", "张三");
     return new EventVo(id, "下载文件", EventType.DOWNLOAD, new Date(), user);
+
   }
 
   @PostMapping("/events")
