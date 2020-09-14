@@ -18,7 +18,7 @@ public class EventVo {
 
   private EventType type;
 
-  @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
+  @JsonFormat(shape = JsonFormat.Shape.NUMBER)
   private Date time;
 
   @JsonUnwrapped
